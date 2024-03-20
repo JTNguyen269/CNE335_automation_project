@@ -11,6 +11,6 @@ def print_program_info():
 
 if __name__ == '__main__':
     print_program_info()
-    my_server = Server("54.185.228.193")
+    my_server = Server("54.149.41.254", r"C:\Users\johnn\OneDrive\Desktop\Jtnguyen_Key.pem")
     if my_server.ping():
-        print("Success")
+        my_server.run_a_command("sudo apt update && sudo apt -y upgrade")
